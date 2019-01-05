@@ -1,0 +1,98 @@
+@font-face {
+	src: url(../font/Roboto_Light.ttf);
+	font-family: roboto;
+}
+@media (max-height: 700px) {
+	body {
+		overflow-y: auto;
+	}
+}
+@media (max-width: 700px) { /* Для телефонов */
+	main {
+		height: 300px;
+		width: 320px;
+		margin: auto;
+		background: url(../img/board.png);
+		background-size: 100% 100%;
+		margin-bottom: 280px;
+	}
+	img {
+		width: 105px;
+		margin: 0px;
+	}
+	#fix {
+		bottom: 29px;
+	}
+	#fix_2 {
+		bottom: 17px;
+	}
+	#win {
+		width: 400px;
+		height: 300px;
+		left: -24px;
+	}
+	#win + div {
+		width: 40%;
+		height: 30%;
+		top: 35%;
+		left: 30.2%;
+	}
+	#win + div > p {
+		padding-top: 0%;
+		font-size: 93%;
+	}
+	#win + div > p ~ span {
+		margin: 0px 12px 0px 12px;
+		font-size: 80%;
+	}
+}
+@media (max-width: 1200px){ /* Для квадратных мониторов */
+	#window {
+		display: none;
+	}
+	.none {
+		display: inherit;
+		margin-bottom: 15px;
+		text-align: center;
+		cursor: pointer;
+	}
+	#Ncenter {
+		display: table;
+	}
+}
+@keyframes img {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+@keyframes level {
+	from {
+		display: none;
+		opacity: 0;
+	}
+	to {
+		display: table-row-group;
+		opacity: 1;
+	}
+}
+@keyframes again {
+	from {
+		top: 26px;
+		text-align: center;
+		position: relative;
+		left: 26px;
+	}
+	to {
+		top: 52px;
+		text-align: center;
+		position: relative;
+		left: 26px;
+	}
+}
+@keyframes bar {
+	from {
+		height: 165px;
+	}
+	to {
+    height: 242px;
+	}
+}

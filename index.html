@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>The Tic Tac game</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/@style.css">
+	<script src="js/script.js" type="text/javascript" charset="utf-8" async defer></script>
+	<link href="img/tic-tac.ico" rel="shortcut icon">
+	<meta name="author" content="Valimukhametov Ruslan">
+</head>
+<body>
+	<h1>The Tic Tac Game!</h1>
+
+	<div id="rel_2" class="none">
+		<p class="par">Заного</p>
+	</div>
+	<table id="Ncenter">
+		<tr>
+			<td>
+				<p id="N"> Компьютер</p>
+			</td>
+			<td>
+  				<input type="checkbox" id="Ncbx" style="display:none" />
+  				<label class="Ntoggle" id="Ncomp"><span></span></label>
+  			</td>
+		</tr>
+	</table>
+
+	<main>
+		<table>
+			<tr>
+				<div id="win"></div>
+				<div id="lose"></div>
+				<div id="windows">
+					<p>Xотите начать первым?</p>
+					<span id="Yes">Да</span> <span id="No">Нет</span>
+				</div>
+				<td><img src="img/emptiness.png"></td>
+				<td><img src="img/emptiness.png"></td>
+				<td><img src="img/emptiness.png"></td>
+			</tr>
+			<tr id="fix_2">
+				<td><img src="img/emptiness.png"></td>
+				<td><img src="img/emptiness.png"></td>
+				<td><img src="img/emptiness.png"></td>
+			</tr>
+			<tr id="fix">
+				<td><img src="img/emptiness.png"></td>
+				<td><img src="img/emptiness.png"></td>
+				<td><img src="img/emptiness.png"></td>
+			</tr>
+		</table>
+
+		<aside>
+			<table id="table_window">
+				<tr class="window_string">
+					<td id="X">Первый игрок</td>
+					<td>X</td>
+				</tr>
+				<tr class="window_string">
+					<td id="Y">Второй игрок</td>
+					<td>O</td>
+				</tr>
+				<tr class="window_string">
+					<td id="output1">Сейчас ходит 
+						<span id="output">первый</span>
+						<span>игрок</span>
+					</td>
+				</tr>
+				<tr class="center" title="Играть против компьютера">
+					<td id="switch"> Компьютер
+  						<input type="checkbox" id="cbx" style="display:none" />
+  						<label for="cbx" class="toggle" id="comp"><span></span></label>
+  					</td>
+  				</tr>
+
+  				<tbody id="level_body">
+  					<tr id="level">
+  						<td id="level_123">Уровень сложности</td>
+  					</tr>
+  					<tr>
+  						<div id="div">
+  							<td id="first"><span title="Первый уровень">1</span></td>
+  							<td id="second"><span title="Второй уровень">2</span></td>
+  							<td id="third"><span title="Третий уровень">3</span></td>
+  						</div>
+  					</tr>
+  				</tbody>
+
+				<tr>
+					<td id="rel" title="Начать заного"><p class="par">Заново</p></td>
+				</tr>
+			</table>
+		</aside>
+	</main>
+</body>
+</html>

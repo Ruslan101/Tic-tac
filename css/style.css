@@ -1,0 +1,362 @@
+body {
+	background-image: url(../img/background.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	overflow: hidden;
+}
+main {
+	height: 600px;
+	width: 700px;
+	margin: auto;
+	background: url(../img/board.png);
+	background-size: 100% 100%;
+	margin-bottom: 50px;
+	cursor: pointer;
+}
+h1 {
+	font-family: roboto;
+	text-align: center;
+}
+img {
+	width: 200px;
+	margin-left: 25px;
+
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+#fix {
+	position: relative;
+	bottom: 15px;
+}
+#fix_2 {
+	position: relative;
+	bottom: 10px;
+}
+aside {
+    position: relative;
+    bottom: 432px;
+    background-color: lightcyan;
+    right: 260px;
+	width: 228px;
+	height: 165px;
+    border: solid 1px lightcyan;
+    border-radius: 15px;
+    font-family: roboto;
+}
+.window_string {
+	height: 30px;
+}
+#table_window {
+	width: 100%;
+}
+#win {
+	background-image: url(../img/win.png);
+	background-size: 100% 100%;
+	width: 600px;
+	height: 500px;
+	margin: auto;
+	position: absolute;
+	right: 15px;
+	left: 20px;
+	display: none;
+	z-index: 1;
+}
+#lose {
+	background-image: url(../img/lose.png);
+	background-size: 100% 100%;
+	width: 500px;
+	height: 400px;
+	margin: auto;
+	position: absolute;
+	right: 15px;
+	left: 20px;
+	display: none;
+	z-index: 1;
+}
+#windows {
+	width: 30%;
+	height: 20%;
+	position: relative;
+	top: 40%;
+	left: 35.2%;
+	text-align: center;
+	background-color: MediumSpringGreen;
+	border: solid 1.5px;
+	border-radius: 15px;
+	display: none;
+}
+#windows > p {
+	padding-top: 10%;
+	font-family: roboto;
+	font-size: 110%;
+	color: #0f35a5;
+}
+#windows > p ~ span {
+	width: 25%;
+	height: 18%;
+	display: inline-block;
+	margin: 10px 12px 0px 12px;
+	border: 0.5px solid;
+	border-radius: 13px;
+}
+#windows > p ~ span:hover {
+	background-color: SteelBlue;
+	color: white;
+}
+.par {
+	border: 1px solid aquamarine;
+	background-color: aquamarine;
+	margin: 0px;
+	margin: auto;
+	width: 100px;
+	border-radius: 15px;
+}
+.par::selection {
+	background-color: aquamarine;
+	color: black;
+}
+.par::-moz-selection {
+	background-color: aquamarine;
+	color: black;	
+}
+.par:hover {
+	border-color: black;
+}
+#rel {
+	text-align: center;
+	position: relative;
+	top: 26px;
+	left: 8px;
+}
+.none {
+	display: none;
+}  
+.toggle {
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 20px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transform: translate3d(0,0,0);
+  left: 95px;
+}
+.toggle::before {
+    content: "";
+	position: relative;
+	top: 3px;
+	left: 3px;
+	width: 34px;
+	height: 14px;
+	display: block;
+	background: #9A9999;
+	border-radius: 8px;
+	transition: background 0.2s ease;
+}
+.toggle span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 20px;
+	height: 20px;
+	display: block;
+	background: white;
+	border-radius: 10px;
+	box-shadow: 0 3px 8px #9a999980;
+	transition: all 0.2s ease;
+}
+.toggle span::before {
+	content: "";
+	position: absolute;
+	display: block;
+	margin: -18px;
+	width: 56px;
+	height: 56px;
+	background: #f68007;
+	border-radius: 50%;
+	transform: scale(0);
+	opacity: 1;
+	pointer-events: none;
+}
+#cbx:checked + .toggle span {
+    background: #f68007;
+    transform: translateX(20px);
+    transition: all 0.2s cubic-bezier(0.8, 0.4, 0.3, 1.25);
+    box-shadow: 0 3px 8px #4f2edc33;
+}
+#cbx:checked + .toggle span::before {
+	transform: scale(1);
+	opacity: 0;
+	transition: all 0.4s ease;
+}
+.center {
+  position: absolute;
+  top: 92px;
+  left: 99px;
+}
+#switch {
+	position: relative;
+	display: flex;
+	left: -96px;
+}
+#Ncenter {
+	display: none;
+	width: 100%;
+}
+#N {
+	margin: 0px;
+	text-align: right;
+	width: 74%;
+}
+#level {
+	position: relative;
+	top: 10px;
+}
+#level ~ tr {
+	position: relative;
+	top: 27px;
+}
+#first {
+	position: relative;
+	left: 51px;
+}
+#first > span:hover {
+	background-color: #ff2d00;
+	color: white;
+	border-color: black;
+}
+#first > span {
+	background-color: aqua;
+	padding: 5px;
+	border: 1px solid aqua;
+	border-radius: 16px;
+}
+#second {
+	position: relative;
+	right: 78px;
+}
+#second > span:hover {
+	background-color: #ff2d00;
+	color: white;
+	border-color: black;
+}
+#second > span {
+	background-color: aqua;
+	padding: 5px;
+	border: 1px solid aqua;
+	border-radius: 16px;
+}
+#third > span:hover {
+	background-color: #ff2d00;
+	color: white;
+	border-color: black;
+}
+#third_choice {
+	background-color: #ff2d00 !important;
+	color: white !important;
+	border: black 1px solid !important;
+}
+#third {
+	position: relative;
+	right: 45px;
+}
+#third > span {
+	background-color: aqua;
+	padding: 5px;
+	border: 1px solid aqua;
+	border-radius: 16px;
+}
+.Ntoggle {
+	display: block;
+	width: 40px;
+	height: 20px;
+	cursor: pointer;
+	-webkit-tap-highlight-color: transparent;
+	transform: translate3d(0,0,0);
+	right: 45%;
+	position: relative;
+}
+.Ntoggle::before {
+    content: "";
+	position: relative;
+	top: 3px;
+	left: 3px;
+	width: 34px;
+	height: 14px;
+	display: block;
+	background: #9A9999;
+	border-radius: 8px;
+	transition: background 0.2s ease;
+}
+.Ntoggle span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 20px;
+	height: 20px;
+	display: block;
+	background: white;
+	border-radius: 10px;
+	box-shadow: 0 3px 8px #9a999980;
+	transition: all 0.2s ease;
+}
+.Ntoggle span::before {
+	content: "";
+	position: absolute;
+	display: block;
+	margin: -18px;
+	width: 56px;
+	height: 56px;
+	background: #f68007;
+	border-radius: 50%;
+	transform: scale(0);
+	opacity: 1;
+	pointer-events: none;
+}
+#Ncbx:checked + .Ntoggle span {
+    background: #f68007;
+    transform: translateX(20px);
+    transition: all 0.2s cubic-bezier(0.8, 0.4, 0.3, 1.25);
+    box-shadow: 0 3px 8px #4f2edc33;
+}
+#Ncbx:checked + .Ntoggle span::before {
+	transform: scale(1);
+	opacity: 0;
+	transition: all 0.4s ease;
+}
+.Ncenter {
+  position: absolute;
+  top: calc(50% - 10px);
+  left: calc(50% - 20px);
+}
+#level_body {
+	display: none;
+}
+#level_animation {
+	animation-name: level;
+	animation-duration: 3.5s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+#again_animation {
+	animation-name: again;
+	animation-duration: 1.5s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+.fix {
+	position: relative;
+	left: 26px;
+}
+#bar_animation {
+	animation-name: bar;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+#fix476 {
+	position: relative;
+	left: 169px;
+	bottom: 20px;
+}
